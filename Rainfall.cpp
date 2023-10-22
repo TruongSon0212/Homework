@@ -1,5 +1,5 @@
 #include <iostream>
-
+using namespace std;
 int main() {
     const int NUM_MONTHS = 12;
     double rainfall[NUM_MONTHS];
@@ -11,8 +11,8 @@ int main() {
 
     for (int i = 0; i < NUM_MONTHS; i++) {
         do {
-            std::cout << "Enter rainfall for month " << i + 1 << ": ";
-            std::cin >> rainfall[i];
+            cout << "Enter rainfall for month " << i + 1 << ": ";
+            cin >> rainfall[i];
         } while (rainfall[i] < 0);
 
         totalRainfall += rainfall[i];
@@ -29,11 +29,11 @@ int main() {
 
     averageRainfall = totalRainfall / NUM_MONTHS;
 
-    std::cout << "\nTotal rainfall for the year: " << totalRainfall << " units\n";
-    std::cout << "Average monthly rainfall: " << averageRainfall << " units\n";
-    std::cout << "Month with the highest amount of rainfall: " << maxMonth + 1 << " ("
+    cout << "\nTotal rainfall for the year: " << totalRainfall << " units\n";
+    cout << "Average monthly rainfall: " << averageRainfall << " units\n";
+    cout << "Month with the highest amount of rainfall: " << maxMonth + 1 << " ("
               << maxRainfall << " units)\n";
-    std::cout << "Month with the lowest amount of rainfall: " << minMonth + 1 << " ("
+    cout << "Month with the lowest amount of rainfall: " << minMonth + 1 << " ("
               << minRainfall << " units)\n";
 
     return 0;
