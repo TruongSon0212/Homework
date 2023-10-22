@@ -15,9 +15,9 @@ int main() {
     bool isWinner = binarysearch(luckyNumbers.begin(), luckyNumbers.end(), winningNumber);
 
     if (isWinner) {
-        std::cout << "Congratulations! You have a winning ticket!\n";
+        cout << "Congratulations! You have a winning ticket!\n";
     } else {
-        std::cout << "Sorry, none of your tickets are winners this week.\n";
+        cout << "Sorry, none of your tickets are winners this week.\n";
     }
 
     return 0;
