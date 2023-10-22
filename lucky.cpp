@@ -12,7 +12,7 @@ int main() {
     cout << "Enter this week's winning 5-digit number: ";
     cin >> winningNumber;
 
-    bool isWinner = binarysearch(luckyNumbers.begin(), luckyNumbers.end(), winningNumber);
+    bool isWinner = binary_search(luckyNumbers.begin(), luckyNumbers.end(), winningNumber);
 
     if (isWinner) {
         cout << "Congratulations! You have a winning ticket!\n";
